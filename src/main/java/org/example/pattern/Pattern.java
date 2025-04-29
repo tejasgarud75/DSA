@@ -1,4 +1,4 @@
-package org.example;
+package org.example.pattern;
 
 public class Pattern {
 
@@ -15,8 +15,26 @@ public class Pattern {
 //    pattern15();
 //    pattern16();
 //    pattern17();
-    pattern18();
+//    pattern18();
+    pattern19();
 
+  }
+
+  private static void pattern19() {
+    int no = 5;
+    for (int i = 0; i <= no / 2; i++) {
+      for (int j = 0; j <= i; j++) {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+
+    for (int i = no/2-1; i >=0; i--) {
+      for (int j = i; j >= 0; j--) {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
   }
 
 
